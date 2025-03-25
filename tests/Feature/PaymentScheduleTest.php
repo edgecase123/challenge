@@ -1,6 +1,6 @@
 <?php
 
-namespace Feature;
+namespace Tests\Feature;
 
 use App\Services\CalculatePaymentService;
 use Carbon\CarbonImmutable;
@@ -62,6 +62,5 @@ class PaymentScheduleTest extends TestCase
         $totalExpected = (int) $totalExpected * 100;
         $total = (int) $total * 100;
         $this->assertEquals($totalExpected, $total);
-        $this->assertTrue(1 > 0);
     }
 }

@@ -27,7 +27,6 @@ class CalculatePaymentService
 
         // Calculate payment amount
         $payment = round($total / $numberOfPayments, 2);
-        Log::log('debug', __FUNCTION__ . ': ' . 'Payment: ' . $payment);
         $paymentDate = now()->startOfDay();
 
         for ($i = 1; $i <= $numberOfPayments; $i++) {
